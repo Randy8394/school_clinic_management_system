@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCTU Clinic</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="<link rel="preconnect href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <div class="header">
+
+        <div class="container">
+
+            <div class="navbar">
+                <div class="logo">
+               <a href="index.html"> <img src="images/logo.png" width="200px"></a>
+            </div>
+        
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html"><strong>Home</strong></a></li>
+                    <li><a href="https://site.gctu.edu.gh/contact-us"><strong>Contact</strong></a></li>
+                    <li><a href="https://site.gctu.edu.gh/gtuc/administration/about-gtuc/"><strong>About</strong></a></li>  
+                    <li><a href="Learn.html"><strong>Learn</strong></a></li>
+                    <li><a href="Account.html"><strong>Account</strong></a></li>
+                </ul>
+            </nav>
+
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+
+
+    <div class="intake">
+        <h4><strong>MEETING REQUEST FORM</strong></h4>
+    </div>
+ 
+    <section class="container">
+        <header>We look forward to meeting with you</header>
+        <form action="#" class="form">
+            
+            <div class="input-box">
+                <label>Select date for appointment</label>
+                <input type="date" required>
+            </div>
+            
+            <div class="input-box">
+                <label>Select date for appointment</label>
+                <input type="time" required>
+            </div>
+
+            <br><br><br>
+
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Samuel Kweku Forson" required/>
+            </div>
+
+            <div class="input-box">
+                <label>Email Address</label>
+                <input type="email" placeholder="example@website.com" required/>
+            </div>
+
+                <div class="input-box">
+                    <label>Contact Number</label>
+                    <input type="number" placeholder="123 456 7890">
+                </div>
+
+            <br><br><br>
+
+
+            <div class="gender-box">
+                <h3>Which service or services are you interested in</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-illness_tracking" name="services" checked>
+                        <label for="check-illness_tracking">Comprehensive illness tracking</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-report" name="services">
+                        <label for="check-report">Automated reporting and notifications</label>
+                    </div>
+
+                    <div class="gender">
+                        <input type="radio" id="check-Documentation" name="services">
+                        <label for="check-Documentation">Injury Documentation and management</label>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <div class="column">
+                <div class="textarea">
+                    <label>Message</label><br>
+                    <textarea></textarea>
+                </div>
+            </div>
+
+                <button id="submit" onclick="message()">Submit</button>
+           
+        </form>
+    </section>
+
+
+    <!-----------------java script for toggle menu-------------------------->
+        <script>
+            var MenuItems = document.getElementById("MenuItems") 
+
+            MenuItems.style.maxHeight = "0px"
+
+            function menutoggle()
+            {
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            
+
+                else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+
+            }
+
+        </script>
+
+</body>    
+</html>

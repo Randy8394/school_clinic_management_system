@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: radial-gradient(#fff, #add8e6);
+}
+
+.container
+{
+    position: relative ;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5 );
+}
+
+.container header
+{
+    font-size: 1.5rem;
+    color: blue;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container
+{
+    margin-top: 30px;
+}
+
+.form .input-box
+{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label
+{
+    color: #333;
+}
+
+.form .input-box input
+{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    color: #707070;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-top: 8px;
+}
+
+.form .column
+{
+    display: flex;
+    column-gap: 15px;
+}
+
+.form :where(.gender-option, .gender)
+{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .gender
+{
+    column-gap: 5px;
+    cursor: pointer;
+}
+
+.form :where(.gender input, .gender label)
+{
+    cursor: pointer;
+}
+
+.form .gender-box
+{
+    margin-top: 20px;
+}
+
+.gender-box h3
+{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400px;
+    margin-bottom: 20px;
+}
+
+
+.form button
+{
+    height: 55px;
+    width: 100%;
+    color: blue;
+    background-color: #add8e6;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 400px;
+}
+
+.form button:hover
+{
+    background-color: blue;
+    color: #add8e6;
+}
+
+.select-box select
+{
+    height: 30px;
+    width: 100px;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 8px;
+    color: #333;
+}
+
+.textarea textarea
+{
+    height: 80px;
+    width: 300px;
+}
+
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;    
+}
+
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul
+{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a 
+{
+        text-decoration: none;
+        color: #555
+}
+
+p
+{
+    color: #555;
+
+}
+
+
+.row
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn
+{
+    display: inline-block;
+    background: blue;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px ;
+    transition: background 0.5s ;
+}
+
+.btn:hover
+{
+    background: lightskyblue;
+}
+
+.header
+{
+    background: radial-gradient(#fff, #add8e6);
+}
+
+.header .row
+{
+    margin-top: 70px;
+}
+
+.categories
+{
+    margin: 0% 0;
+    background: radial-gradient(#fff, #add8e6);
+}
+
+
+            /*-------------------Footer-------------------------*/
+.footer
+{
+    background-color: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer a
+{
+    color: blue;
+}
+
+.footer p
+{
+    color: #8a8a8a;
+}
+
+.footer h3
+{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4
+{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1
+{
+    flex-basis: 30%;
+}
+
+.footer-col-2
+{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img
+{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4
+{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+.app-logo
+{
+    margin-top: 20ppx;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.app-logo
+{
+    margin-top: 20px;
+}
+
+.app-logo img
+{
+    width: 140px;
+}
+
+.footer hr 
+{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright
+{
+    text-align: center;
+}
+
+.menu-icon
+{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+     /*-------------------media query for menu----------------------*/
+
+     @media only screen and (max-width: 800px)
+    {
+        nav ul
+        {
+            position: absolute;
+            top: 70px;
+            left: 0;
+            background: #333;
+            width: 100%;
+            overflow: hidden;
+            transition: max-height 0.5s;
+
+        }
+
+        nav ul li
+        {
+            display: block;
+            margin-right: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        };
+
+        nav ul li a
+
+        {
+            color: #fff;
+        }
+
+        .menu-icon
+        {
+            display: block;
+            cursor: pointer;
+        }
+        
+    }
+
+    /*-------media query for less than 600 screen size----------*/
+
+@media only screen and (max-width: 600px)
+{
+    .row
+    {
+        text-align: left;
+    }
+    .col-0, .col-2, .col-3, .col-4
+    {
+        flex-basis: 100%;
+    }
+
+    .single-product .row
+    {
+        text-align: left;
+    }
+
+    .single-product .col-2
+    {
+        padding: 20px 0;
+    }
+
+    .single-product .h1
+    {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+}

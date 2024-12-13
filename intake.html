@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCTU Clinic</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="<link rel="preconnect href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <div class="header">
+
+        <div class="container">
+
+            <div class="navbar">
+                <div class="logo">
+               <a href="index.html"> <img src="images/logo.png" width="200px"></a>
+            </div>
+        
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html"><strong>Home</strong></a></li>
+                    <li><a href="https://site.gctu.edu.gh/contact-us"><strong>Contact</strong></a></li>
+                    <li><a href="https://site.gctu.edu.gh/gtuc/administration/about-gtuc/"><strong>About</strong></a></li>  
+                    <li><a href="Learn.html"><strong>Learn</strong></a></li>
+                    <li><a href="Account.html"><strong>Account</strong></a></li>
+                </ul>
+            </nav>
+
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+
+
+    <div class="intake">
+        <h4><strong>INTAKE FORM</strong></h4>
+    </div>
+ 
+    <section class="container">
+        <header>Help us serve you better</header>
+        <form action="#" class="form">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Samuel Kweku Forson" required/>
+            </div>
+
+            <div class="input-box">
+                <label>Email Address</label>
+                <input type="email" placeholder="example@website.com" required/>
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Contact Number</label>
+                    <input type="number" placeholder="123 456 7890">
+                </div>
+
+                <div class="input-box">
+                    <label>Date of birth</label>
+                    <input type="date">
+                </div>
+
+            </div>
+
+            <br><br>
+
+            <div class="select-box">
+                <label>Grade Level</label> &nbsp;
+                <select name="grade_level" id="grade_level">
+                    <option value="grade_level">Level</option>
+                    <option value="grade_level">100</option>
+                    <option value="grade_level">200</option>
+                    <option value="grade_level">300</option>
+                    <option value="grade_level">400</option>
+                </select>
+           </div>
+
+
+           <br>
+
+
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" checked>
+                        <label for="check-male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender">
+                        <label for="check-female">Female</label>
+                    </div>
+
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender">
+                        <label for="check-other">Perfer not to say</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label>Address</label>
+                <input type="text" placeholder="Tesano">
+                <input type="number" placeholder="XXX-123-4567">
+                <input type="text" placeholder="P.O.Box 1234">
+                <input type="text" placeholder="Greater Accra Region">
+            </div>
+
+            <br>
+
+            <div class="gender-box">
+                <h3>Reason for visit</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-illness" name="reason" checked>
+                        <label for="check-illness">Illness</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-injury" name="reason">
+                        <label for="check-injury">Injury</label>
+                    </div>
+
+                    <div class="gender">
+                        <input type="radio" id="check-check_up" name="reason">
+                        <label for="check-check_up">Check-up</label>
+                    </div>
+
+                    <div class="gender">
+                        <input type="radio" id="check-mental_health" name="reason">
+                        <label for="check-mental_health">Mental Health</label>
+                    </div>
+
+
+                    <div class="gender">
+                        <input type="radio" id="check-medication" name="reason">
+                        <label for="check-medication">Medication Management</label>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="column">
+                <div class="textarea">
+                    <label>What Symptoms are you experiencing</label><br>
+                    <textarea></textarea>
+                </div>
+            </div>
+
+            <br><br>
+            
+            <div class="column">
+                <div class="textarea">
+                    <label>Are you taking any medication?</label><br>
+                    <textarea></textarea>
+                </div>
+            </div>
+
+            <br><br>
+            
+            <div class="column">
+                <div class="textarea">
+                    <label>Does the student have any know allergies?</label><br>
+                    <textarea></textarea>
+                </div>
+            </div>
+
+
+            <br><br>
+            
+            <div class="column">
+                <div class="textarea">
+                    <label>Additional questions and comments</label><br>
+                    <textarea></textarea>
+                </div>
+            </div>
+
+
+            <button>Submit</button>
+
+        </form>
+    </section>
+
+
+    <!-----------------java script for toggle menu-------------------------->
+        <script>
+            var MenuItems = document.getElementById("MenuItems") 
+
+            MenuItems.style.maxHeight = "0px"
+
+            function menutoggle()
+            {
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            
+
+                else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+
+            }
+
+        </script>
+
+</body>    
+</html>
